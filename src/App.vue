@@ -1,8 +1,25 @@
 <template>
   <div id="app">
-    <router-view/>
+      <router-view />
   </div>
 </template>
+<script>
+  import {mapMutations} from 'vuex'
+  export default {
+    name:"home",
+    methods:{
+      ...mapMutations([
+        'CHANGE_RIGHT_SHOW'
+      ])
+    },
+
+    watch:{
+      $route(to){
+        this.CHANGE_RIGHT_SHOW(to.meta.rightShow)
+      }
+    }
+  }
+</script>
 <style lang="less">
   @import "assets/less/reset";
   body,html{
