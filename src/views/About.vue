@@ -1,1 +1,1 @@
-<template>  <div class="about">    about me  </div>  </template><script>  export default {    name: "About",  }</script><style scoped lang="less">    .about{    text-align: left;    flex: 1;  }</style>
+<template>  <div class="about">    about me  </div></template><script>  export default {    name: "About",  }</script><style scoped lang="less">  .about{    text-align: left;    flex: 1;    height: 100%;    overflow: auto;  }</style>
