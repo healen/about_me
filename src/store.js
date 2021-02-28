@@ -11,7 +11,6 @@ export default new Vuex.Store({
     CHANGE_RIGHT_SHOW(state,bool){
       state.rightShow = bool
     }
-
   },
   actions: {
 
